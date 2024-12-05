@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root,
+.app {
+  height: 100%;
+  width: 100%;
+  @apply text-sm;
+  @apply bg-white;
+  @apply dark:bg-tertiary;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+@layer utilities {
+  .gradient1 {
+    background: linear-gradient(
+      75deg,
+      rgba(0, 0, 0, 0.6),
+      rgba(11, 63, 93, 1) 50%,
+      rgba(0, 0, 0, 0.6)
+    );
+  }
+
+  .gradient2 {
+    background: linear-gradient(
+      126deg,
+      rgba(100, 5, 167, 0.2),
+      rgba(11, 63, 93, 0.2)
+    );
+  }
+
+  .border1 {
+    border: 1px solid #6405a7;
+  }
+}
